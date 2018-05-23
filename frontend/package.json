@@ -1,0 +1,42 @@
+{
+  "name": "lotus-frontend",
+  "version": "0.0.1",
+  "description": "Front end to the lotus API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k 'npm run dev-js' 'npm run dev-css'",
+    "prod": "concurrently 'npm run prod-js' 'npm run prod-css'",
+    "dev-js": "webpack --mode development --watch",
+    "prod-js": "webpack --mode production --display-modules",
+    "dev-css": "postcss css/main.css --watch -u postcss-import -o dist/bundle.css",
+    "prod-css": "postcss css/main.css -u postcss-import autoprefixer postcss-css-variables cssnano --no-map -o dist/bundle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/StreatCodes/lotus"
+  },
+  "keywords": [
+    "lotus",
+    "frontend"
+  ],
+  "author": "Killa Streats",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.5.1",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-css-variables": "^0.8.1",
+    "postcss-import": "^11.1.0",
+    "preact": "^8.2.9",
+    "preact-router": "^2.6.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}

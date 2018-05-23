@@ -1,0 +1,24 @@
+/* Login */
+main.login {
+    max-width: 400px;
+    margin: 25vh auto;
+}
+
+main.login > h2 {
+    text-align: center;
+}
+
+main.login button {
+    width: 100%;
+}
+
+/* Admin */
+.admin main {
+    position: fixed;
+    left: calc(32px + 30px);
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+    padding: 30px;
+}
