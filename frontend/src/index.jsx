@@ -7,7 +7,8 @@ import { Admin } from './admin.jsx';
 const Main = () => (
 	<Router>
 		<Login path="/login" />
-		<Admin path="/admin/" />
+		<Admin path="/admin"/>
+		<Admin path="/admin/dash" />
 		<Admin path="/admin/pages" />
 		<Admin path="/admin/users" />
 	</Router>

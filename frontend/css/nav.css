@@ -16,17 +16,23 @@ nav svg {
 }
 
 nav div.nav-icon {
-	padding: 15px 15px;
+	padding: 15px 15px 15px 12px;
 	margin-bottom: 5px;
 	cursor: pointer;
+	border-left: solid 3px transparent;
+	transition: border-left-color 300ms;
 }
+
+nav div.nav-icon:hover {
+	border-left-color: rgba(0, 195, 255, 0.37);
+}
+
 nav div.nav-icon:hover > span {
 	display: inline-block;
 }
 
 nav div.nav-icon.active {
-	border-left: solid 3px rgb(0, 195, 255);
-	padding-left: 12px;
+	border-left-color: rgb(0, 195, 255);
 }
 
 nav div.nav-icon > span {

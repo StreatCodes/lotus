@@ -1,4 +1,4 @@
-import { Router } from 'preact-router';
+import { Router, route, getCurrentUrl } from 'preact-router';
 import { h, Component } from 'preact';
 
 import { NavBar } from './components/navbar.jsx';
@@ -10,13 +10,20 @@ export class Admin extends Component {
         super();
     }
 
+    componentWillMount() {
+        if(getCurrentUrl().match(/\/admin\/?/)) {
+            //If logged in rout to dash otherwise route to login
+            route('/admin/dash');
+        }
+    }
+
     render = () => {
         return (
             <div class="admin">
                 <NavBar />
                 
                 <Router>
-                    <Dash path="/admin/" />
+                    <Dash path="/admin/dash" />
                     <Pages path="/admin/pages" />
                 </Router>
             </div>
