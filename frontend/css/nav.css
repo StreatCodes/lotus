@@ -63,9 +63,15 @@ div.pages-nav {
 	position: absolute;
 	border-right: solid 1px #22222225;
 	width: 360px;
+	max-width: 0;
+	overflow: hidden;
 	top: 0;
-    left: calc(32px + 30px);
+	left: calc(32px + 30px);
 	bottom: 0;
+	transition: max-width 300ms;
+}
+div.pages-nav.show{
+	max-width: 360px;
 }
 div.pages-nav>header {
 	padding: 20px 10px;
@@ -77,9 +83,33 @@ div.pages-nav>header {
 div.pages-nav>header h3 {
 	margin: 0;
 }
-div.pages-nav>header svg {
-	stroke: #222222;
+div.pages-nav>header svg:hover {
+	cursor: pointer;
+	background-color: #e7e7e7;
+	border-radius: 3px;
 }
 div.pages-nav>main {
 	padding: 10px;
+}
+
+div.floaty-toggle {
+	position: fixed;
+	left: 72px;
+	top: 8px;
+	background-color: white;
+	border: solid 2px #222222;
+	padding: 10px;
+	border-radius: 50%;
+	line-height: 0;
+	z-index: 10;
+	opacity: 0.2;
+	transition: opacity 400ms;
+	cursor: pointer;
+}
+div.floaty-toggle:hover {
+	opacity: 1;
+}
+.pages-nav.show  div.floaty-toggle {
+	opacity: 0;
+	pointer-events: none;
 }
