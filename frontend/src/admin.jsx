@@ -11,7 +11,7 @@ export class Admin extends Component {
     }
 
     componentWillMount() {
-        if(getCurrentUrl().match(/\/admin\/?/)) {
+        if(getCurrentUrl().match(/\/admin\/?$/)) {
             //If logged in rout to dash otherwise route to login
             route('/admin/dash');
         }

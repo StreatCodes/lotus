@@ -1,3 +1,4 @@
+/* Admin nav */
 nav {
 	background-color: rgb(44, 44, 44);
 	color: white;
@@ -55,4 +56,30 @@ nav div.nav-icon > span::before {
 	position: absolute;
 	left: -8px;
 	top: 11px;
+}
+
+/* Pages nav */
+div.pages-nav {
+	position: absolute;
+	border-right: solid 1px #22222225;
+	width: 360px;
+	top: 0;
+    left: calc(32px + 30px);
+	bottom: 0;
+}
+div.pages-nav>header {
+	padding: 20px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: solid 1px #22222225;
+}
+div.pages-nav>header h3 {
+	margin: 0;
+}
+div.pages-nav>header svg {
+	stroke: #222222;
+}
+div.pages-nav>main {
+	padding: 10px;
 }
