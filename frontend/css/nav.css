@@ -1,5 +1,5 @@
 nav {
-	background-color: rgb(44, 44, 44);
+	background-color: rgb(29, 39, 48);
 	color: white;
 	position: fixed;
 	left: 0;
@@ -13,7 +13,7 @@ nav {
 }
 
 nav svg {
-	stroke: rgb(160, 160, 160);
+	stroke: rgb(204, 204, 204);
 }
 
 nav div.nav-icon {
@@ -29,7 +29,7 @@ nav div.nav-icon.active {
 
 nav div.nav-icon > span {
 	position: absolute;
-	background-color: rgba(44, 44, 44, 0.97);
+	background-color: rgba(29, 39, 48, 0.97);
 	margin-left: 34px;
 	line-height: 16px;
 	padding: 12px 14px;
@@ -42,7 +42,7 @@ nav div.nav-icon > span::before {
 	height: 0;
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
-	border-right: 8px solid rgba(44, 44, 44, 0.97);
+	border-right: 8px solid rgba(29, 39, 48, 0.97);
 	position: absolute;
 	left: -8px;
 	top: 11px;
