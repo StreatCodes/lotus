@@ -4,6 +4,7 @@ import { h, Component } from 'preact';
 import { NavBar } from './components/navbar.jsx';
 import { Dash } from './dash.jsx'
 import { Pages } from './pages.jsx'
+import { Media } from './media.jsx';
 
 export class Admin extends Component {
     constructor() {
@@ -25,6 +26,7 @@ export class Admin extends Component {
                 <Router>
                     <Dash path="/admin/dash" />
                     <Pages path="/admin/pages" />
+                    <Media path="/admin/media" />
                 </Router>
             </div>
         );

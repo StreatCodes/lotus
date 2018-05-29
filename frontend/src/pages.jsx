@@ -10,7 +10,7 @@ export class Pages extends Component {
 
     render = () => {
         return (
-            <div class="page-wrap">
+            <div class="admin-wrap">
                 <PagesNav />
                 <main class="pages">
                     <h2>Pages</h2>

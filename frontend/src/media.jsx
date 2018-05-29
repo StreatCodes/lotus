@@ -1,7 +1,6 @@
-import { Router, route } from 'preact-router';
 import { h, Component } from 'preact';
 
-export class Dash extends Component {
+export class Media extends Component {
     constructor() {
         super();
     }
@@ -9,8 +8,8 @@ export class Dash extends Component {
     render = () => {
         return (
             <div class="admin-wrap">
-                <main class="dash">
-                    <h2>Dash</h2>
+                <main class="media">
+                    <h2>Media</h2>
                 </main>
             </div>
         );

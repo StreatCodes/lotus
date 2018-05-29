@@ -14,6 +14,7 @@ const Main = () => (
 		<Admin path="/admin" />
 		<Admin path="/admin/dash" />
 		<Admin path="/admin/pages" />
+		<Admin path="/admin/media" />
 		<Admin path="/admin/users" />
 		<NotFound default />
 	</Router>
