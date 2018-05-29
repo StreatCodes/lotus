@@ -12,7 +12,7 @@ export class Login extends Component {
         for(let val of formData.values()) {
             console.log(val);
         }
-        route('/admin');
+        route('/admin/dash');
     }
 
     render = () => {
