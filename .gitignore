@@ -1,3 +1,4 @@
 /server/lotus
 /frontend/node_modules
 /frontend/dist
+/build

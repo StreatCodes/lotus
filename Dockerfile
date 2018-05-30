@@ -1,2 +1,4 @@
 FROM alpine:latest
-VOLUME .:/data
+WORKDIR /app
+COPY build/* ./
+CMD ["/app/lotus"]

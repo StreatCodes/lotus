@@ -7,7 +7,7 @@
     "dev": "concurrently -k 'npm run dev-js' 'npm run dev-css'",
     "prod": "concurrently 'npm run prod-js' 'npm run prod-css'",
     "dev-js": "webpack --mode development --watch",
-    "prod-js": "webpack --mode production --display-modules",
+    "prod-js": "webpack --mode production --display-modules --progress",
     "dev-css": "postcss css/main.css --watch -u postcss-import -o dist/bundle.css",
     "prod-css": "postcss css/main.css -u postcss-import autoprefixer postcss-css-variables cssnano --no-map -o dist/bundle.css"
   },
