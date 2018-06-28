@@ -13,6 +13,10 @@ main.login button {
 }
 
 /* Admin */
+.admin .admin-wrap {
+    min-height: 100vh;
+}
+
 .admin .admin-wrap > main {
     position: fixed;
     left: calc(32px + 30px);
