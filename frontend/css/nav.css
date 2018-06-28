@@ -61,17 +61,23 @@ nav div.nav-icon > span::before {
 /* Pages nav */
 div.pages-nav {
 	position: absolute;
-	border-right: solid 1px #22222225;
-	width: 360px;
-	max-width: 0;
+	border-top: solid 1px #22222225;
+	height: 360px;
+	max-height: 65px;
 	overflow: hidden;
-	top: 0;
 	left: calc(32px + 30px);
+	right: 0;
 	bottom: 0;
-	transition: max-width 300ms;
+	transition: max-height 300ms;
 }
 div.pages-nav.show{
-	max-width: 360px;
+	max-height: 360px;
+}
+div.pages-nav>header>svg{
+	transition: transform 300ms;
+}
+div.pages-nav.show>header>svg{
+	transform: rotate(-180deg);
 }
 div.pages-nav>header {
 	padding: 20px 10px;
@@ -90,26 +96,4 @@ div.pages-nav>header svg:hover {
 }
 div.pages-nav>main {
 	padding: 10px;
-}
-
-div.floaty-toggle {
-	position: fixed;
-	left: 72px;
-	top: 8px;
-	background-color: white;
-	border: solid 2px #222222;
-	padding: 10px;
-	border-radius: 50%;
-	line-height: 0;
-	z-index: 10;
-	opacity: 0.2;
-	transition: opacity 400ms;
-	cursor: pointer;
-}
-div.floaty-toggle:hover {
-	opacity: 1;
-}
-.pages-nav.show  div.floaty-toggle {
-	opacity: 0;
-	pointer-events: none;
 }
