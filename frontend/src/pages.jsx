@@ -14,6 +14,38 @@ export class Pages extends Component {
                 <PagesNav />
                 <main class="pages">
                     <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
+                    <h2>Pages</h2>
                 </main>
             </div>
         );
